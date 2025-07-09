@@ -111,7 +111,7 @@ export default function MyProducts (props){
                       <Edit/>
                     </IconButton>
                   </Link>
-                  //removeProduct is passed as a prop to DeleteProduct component
+                  
                   <DeleteProduct
                     product={product}
                     shopId={props.shopId}

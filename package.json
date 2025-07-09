@@ -47,9 +47,9 @@
     "stripe": "8.38.0"
   },
   "scripts": {
-    "development": "nodemon NODE_OPTIONS=--openssl-legacy-provider",
-    "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
-    "startv22": "cross-env NODE_ENV=production NODE_OPTIONS=--openssl-legacy-provider node ./dist/server.generated.js",
+    "development": "cross-env NODE_OPTIONS=--openssl-legacy-provider node ./dist/server.generated.js nodemon",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider node ./dist/server.generated.js webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
+    "start": "cross-env NODE_ENV=production NODE_OPTIONS=--openssl-legacy-provider node ./dist/server.generated.js",
     "dev": "cross-env NODE_ENV=production NODE_OPTIONS=--openssl-legacy-provider node ./dist/server.generated.js"
   }
 }

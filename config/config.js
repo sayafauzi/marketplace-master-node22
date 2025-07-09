@@ -7,8 +7,6 @@ const config = {
     'mongodb://' + (process.env.IP || 'localhost') + ':' +
     (process.env.MONGO_PORT || '27017') +
     '/mernproject',
-    
-    //enter your keys from Stripe...
   stripe_connect_test_client_id: '',
   stripe_test_secret_key: '',
   stripe_test_api_key: ''
